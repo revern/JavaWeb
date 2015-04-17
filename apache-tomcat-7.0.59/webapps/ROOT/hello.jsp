@@ -17,19 +17,20 @@
         <p>
             Today's date: <%= (new java.util.Date()).toLocaleString()%>
         </p>
-            <h2>Using JavaBeans in JSP</h2>
 
-            <jsp:useBean id="test" class="itis.TestBean" />
+        <h2>Using JavaBeans in JSP</h2>
 
-            <jsp:setProperty name="test"
+        <jsp:useBean id="test" class="itis.TestBean" />
 
-                             property="message"
+        <jsp:setProperty name="test"
 
-                             value="Hello JSP..." />
+                         property="message"
 
-            <p>Got message....</p>
+                         value="Hello JSP..." />
 
-            <jsp:getProperty name="test" property="message" />
+        <p>Got message....</p>
+
+        <jsp:getProperty name="test" property="message" />
 
         <ul>
 
